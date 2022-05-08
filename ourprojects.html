@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/normalize.css ">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Josefin+Sans:wght@100;200&family=Roboto+Slab:wght@200&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .our {
+            font-size: 64px;
+            color: rgb(172, 171, 171);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 100;
+        }
+        
+        .projects{
+            color: #000;
+            font-weight: bold;
+            font-size: 64px;
+        }
+        .pagename{
+            height: 128px;
+            width: 228px;
+        }
+
+        .card1-project,
+        .card2-project,
+        .card3-project{
+            display: flex;
+            background-color: rgba(251, 251, 251, 1);
+            width: 1170px;
+            height: 320px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 135px;
+        }
+        .card1-img,
+        .card2-img,
+        .card3-img {
+            background-color: cadetblue;
+            width: 670px;
+        }
+        .card1-button,
+        .card2-button,
+        .card3-button
+        {
+            border: none;
+            background: none;
+            color: white;
+            font-size: 14px;
+            width: 222px;
+            height: 71px;
+            background-color: white;
+            color: rgb(83, 83, 83);
+
+        }
+        .card1-text,
+        .card2-text,
+        .card3-text{
+            height: 120px;
+            width: 400px;
+            color: rgb(83, 83, 83);
+            font-size: 16px;
+            font-weight: 100 lighter;  
+        }
+        .card1-title,
+        .card2-title,
+        .card3-title{
+            height: 47px;
+            width: 440px;  
+            font-size: 35px; 
+            font-weight: 100;
+            color:  rgb(172, 171, 171);
+        }
+        .card1-body,
+        .card2-body,
+        .card3-body{
+         margin: 15px;
+         padding: 15px;
+         display: flex;
+         flex-direction: column;
+        }
+
+        .arroleft,
+        .arroright{
+        height: 53px;
+         width: 53px;
+         background-color:rgba(242, 242, 242, 1);
+        }
+
+        .littlebuttons{
+            display: flex;
+            flex-direction: row;
+            margin: 135px;
+            padding: 10px;
+           justify-content: space-around;
+           width: 300px;
+            
+        }
+
+        .header{
+         height: 102px;
+         width: 100%;
+         display: flex;
+    }
+  
+
+     .logo{
+        
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         justify-content: center;
+         width: 40%;
+     }
+
+  .nav{
+      
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-left: 10px;
+      text-decoration: none;
+      width: 60%;
+      margin-left: 100px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+  }
+
+    .nav-menu{
+        height:20px;
+width:80px;
+border-top:1px solid #000000;
+border-bottom: solid 1px #030303;
+padding-left:10px;
+text-decoration: none;
+    }
+
+    .nav-contacts,
+    .nav-certific,
+    .nav-projects,
+    .nav-gallery{
+        text-decoration: none;
+    }
+    .footer{
+        display: grid;
+        background-color:rgb(88, 87, 87);
+        grid-template-rows: 350px 70px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 135px;
+        width: 1160px;
+    }
+.footer-line { grid-area: 2 / 1 / 3 / 5; 
+    justify-items: center;
+    color:rgb(206, 205, 205);
+    }
+
+   .social{
+  word-spacing: 30px;
+   }
+    .footer-logo{
+        display: grid;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+       margin-top: -100px;
+       
+    }
+   .footer-menu,
+   .footer-contacts,
+   .footer-socmedia{
+font-weight: bolder;
+color: white;
+display: grid;
+   }
+   .footer-socmedia{
+       display: grid;
+      align-content: center;
+      justify-content: center;
+      margin-top: -253px;
+   }
+   
+.footer-line{
+    display: grid;
+ border-top:1px solid white;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="log" src="./assets/images/Group 8.png" alt="log">
+            <img class="vector" src="./assets/images/Vector.png"> 
+        </div>
+        <nav class="nav">
+                <a href="./architecs.html"  class="nav-menu" style="color: gray;">ГЛАВНАЯ</a>
+                <a href="./gallery.html" class="nav-gallery" style="color: gray;">ГАЛЕРЕЯ</a>
+                <a href="./ourprojects.html" class="nav-projects" style="color: gray;">ПРОЕКТЫ</a>
+                <a href="#" class="nav-certific" style="color: gray;">СЕРТИФИКАТЫ</a>
+                <a href="./contactinformation.html" class="nav-contacts"style="color: gray;">КОНТАКТЫ</a>     
+        </nav>
+    </header>
+    <main>
+    <div class="pagename">
+    <p class="our"> Our <b class="projects">Projects</b></p>  
+</div>
+    <div class="card">
+        <div class="card1-project">
+             <div class="card1-img">
+                <img src="./assets/images/image 30.png" alt="pr1">
+             </div>
+
+            <div class="card1-body">
+                <h5 class="card1-title">Sample Project</h5>
+                <p class="card1-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                 <button class="card1-button">VIEV MORE &#8594</button>
+            </div>
+        </div>
+        <div class="card2-project">
+            <div class="card2-img">
+               <img src="./assets/images/image 33.png" alt="pr2">
+            </div>
+
+           <div class="card2-body">
+               <h5 class="card2-title">Sample Project 2</h5>
+               <p class="card2-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <button class="card2-button">VIEV MORE &#8594</button>
+           </div>
+       </div>
+       <div class="card3-project">
+            <div class="card3-img">
+            <img src="./assets/images/image 32.png" alt="pr3">
+            </div>
+
+            <div class="card3-body">
+           <h5 class="card3-title">Sample Project 3</h5>
+           <p class="card3-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <button class="card3-button">VIEV MORE &#8594</button>
+            </div>
+       </div>
+   </div>
+   <div class="littlebuttons">
+    <div class="slidenumbers2">
+    <img src="./assets/images/slide-numbers-2.png" alt="slidenumber"></div>
+<div class="arrows5">
+    <button class="arroleft">&#8592</button>
+    <button class="arroright">&#8594</button> 
+    </div>   
+   </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img class="footer-log" src="./assets/images/Group 11 1.png" alt="log">
+          
+        </div>
+<div class="footer-menu">
+<p>Information </p>
+<p>Main</p>
+<p> Gallery</p>
+<p>Projects </p>
+<p> Certifications</p>
+<p> Contacts</p>
+</div>
+<div class="footer-contacts">
+<p> Contacts</p>
+<p> <i class="fas fa-map-marker-alt"></i> 1234 Sample Street Austin Texas 76401</p>
+<p> <i class="fas fa-phone"></i> 512.333.2222</p>
+<p> 
+    <i class="far fa-envelope"></i> sampleemail@gmail.com</p>
+</div>
+<div class="footer-socmedia">
+<p> Social Media</p>
+<p class="social"><i class="fab fa-facebook-f"></i>  <i class="fab fa-twitter"></i>  <i class="fab fa-linkedin-in"></i> <i class="fab fa-pinterest-p"></i></p>
+</div>
+
+<div class="footer-line">
+<p>© 2021 All Rights Reserved</p>
+</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+</body>
+
+</html>
